@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LiraUni AI Club</title>
+    <meta
+      name="description"
+      content="LiraUni AI Club: learn, build, and lead with practical artificial intelligence projects."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar container">
+        <a class="logo" href="#home">LiraUni AI Club</a>
+        <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#activities">Activities</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#join">Join</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero container">
+        <p class="tag">Campus Innovation Community</p>
+        <h1>Build useful AI for real community impact.</h1>
+        <p>
+          LiraUni AI Club is where curious students learn machine learning, collaborate on projects,
+          and launch ideas that solve local challenges.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#join">Become a Member</a>
+          <a class="btn btn-secondary" href="#projects">See Club Projects</a>
+        </div>
+      </section>
+
+      <section class="stats container" aria-label="Club highlights">
+        <article>
+          <h2>120+</h2>
+          <p>Students engaged</p>
+        </article>
+        <article>
+          <h2>8</h2>
+          <p>Hands-on workshops each term</p>
+        </article>
+        <article>
+          <h2>15</h2>
+          <p>Team projects built so far</p>
+        </article>
+      </section>
+
+      <section id="about" class="split container">
+        <div>
+          <h3>About the club</h3>
+          <p>
+            We welcome beginners and experienced builders. Through peer-led sessions and mentor support,
+            members learn AI foundations, prompt engineering, model deployment, and ethical AI practices.
+          </p>
+        </div>
+        <div class="card">
+          <h4>What makes us different</h4>
+          <ul>
+            <li>Project-first learning from week one</li>
+            <li>Cross-disciplinary teams from all faculties</li>
+            <li>Focus on responsible AI and local relevance</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="activities" class="activities container">
+        <h3>Club activities</h3>
+        <div class="grid">
+          <article class="card">
+            <h4>AI Fridays</h4>
+            <p>Weekly coding labs on Python, data analysis, and practical ML workflows.</p>
+          </article>
+          <article class="card">
+            <h4>Build Sprints</h4>
+            <p>Short team sprints where members ship prototypes in 48 hours.</p>
+          </article>
+          <article class="card">
+            <h4>Talks & Demos</h4>
+            <p>Guest sessions from researchers, startups, and alumni working in AI.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="projects container">
+        <h3>Featured projects</h3>
+        <div class="grid">
+          <article class="project-card">
+            <h4>Smart Study Coach</h4>
+            <p>An assistant that helps students generate revision plans and quizzes.</p>
+          </article>
+          <article class="project-card">
+            <h4>Agri Signal</h4>
+            <p>A crop advisory prototype using weather data and simple predictive models.</p>
+          </article>
+          <article class="project-card">
+            <h4>Campus HelpBot</h4>
+            <p>A chatbot that answers common student questions about university services.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="join" class="join container">
+        <div>
+          <h3>Join LiraUni AI Club</h3>
+          <p>
+            Meetings every Wednesday at 5:00 PM in the Innovation Hub. Sign up and we will email the
+            onboarding guide and event calendar.
+          </p>
+        </div>
+        <form class="join-form" action="#" method="post">
+          <label for="name">Full name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required />
+
+          <label for="email">University email</label>
+          <input id="email" name="email" type="email" placeholder="you@lirauni.edu" required />
+
+          <button class="btn btn-primary" type="submit">Join Now</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© <span id="year"></span> LiraUni AI Club. Learn. Build. Lead.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
